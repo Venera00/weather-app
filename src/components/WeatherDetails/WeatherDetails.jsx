@@ -17,28 +17,35 @@ const WeatherDetails = () => {
 
       <div className={styles.conditions}>
         <div className={styles.conditions_wrapper}>
-          <div>
-            <img src={images.RealFeelIcon} alt="Temperature" />
+          <img src={images.RealFeelIcon} alt="Temperature" />
+
+          <div className={styles.conditions__info}>
             <p>Real feel</p>
+            <span className={styles.index}> 30°</span>
           </div>
-          <span className={styles.index}> 30°</span>
         </div>
 
         <div className={styles.conditions_wrapper}>
           <img src={images.WindIcon} alt="Wind" />
-          <p>Wind</p>
-          <span className={styles.index}> 0.8 km/hr</span>
+          <div className={styles.conditions__info}>
+            <p>Wind</p>
+            <span className={styles.index}> 0.8 km/hr</span>
+          </div>
         </div>
 
         <div className={styles.conditions_wrapper}>
-          <img src={images.RealFeelIcon} alt="Temperature" />
-          <p>Chance of rain</p>
-          <span className={styles.index}> 2%</span>
+          <img src={images.RainIcon} alt="Rain" />
+          <div className={styles.conditions__info}>
+            <p>Chance of rain</p>
+            <span className={styles.index}> 2%</span>
+          </div>
         </div>
         <div className={styles.conditions_wrapper}>
-          <img src={images.RealFeelIcon} alt="Temperature" />
-          <p>UV Index</p>
-          <span className={styles.index}> 4</span>
+          <img src={images.SunIcon} alt="Sun" />
+          <div className={styles.conditions__info}>
+            <p>UV Index</p>
+            <span className={styles.index}> 4</span>
+          </div>
         </div>
       </div>
     </div>

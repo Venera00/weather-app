@@ -41,7 +41,18 @@
 
   &_wrapper {
     display: flex;
-    align-items: center;
+    align-items: start;
+    gap: 5px;
     color: rgb(255, 255, 255);
+  }
+
+  &__info p {
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .index {
+    font-weight: 500;
+    font-size: 16px;
   }
 }
