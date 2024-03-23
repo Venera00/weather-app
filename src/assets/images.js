@@ -8,6 +8,7 @@ import Pool from "./Pool.png";
 import Oasis from "./Oasis.png";
 import User from "./User.svg";
 import Heart from "./Heart.svg";
+import Watch from "./Watch.svg";
 
 const images = {
   weatherImg,
@@ -20,6 +21,7 @@ const images = {
   Oasis,
   User,
   Heart,
+  Watch,
 };
 
 export default images;
