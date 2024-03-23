@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .time_wrapper {
   display: flex;
   flex-direction: column;
@@ -25,4 +31,13 @@
 .time {
   font-weight: 400;
   font-size: 18px;
+}
+
+.weather__temperature {
+  font-weight: 500;
+  font-size: 64px;
+}
+
+.weathertype_img {
+  margin-right: 60px;
 }

@@ -1,0 +1,47 @@
+.container {
+  width: 324px;
+  height: 537px;
+  background-color: rgb(222, 171, 77);
+  border-radius: 40px;
+}
+
+.days {
+  margin: 34px 0 15px 0;
+  text-align: center;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 36px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.conditions {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  margin-left: 15px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+
+  &_wrapper {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+  }
+}
