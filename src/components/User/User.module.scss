@@ -1,0 +1,30 @@
+.user {
+  width: 100px;
+  height: 537px;
+  margin-left: 40px;
+  background-color: rgb(222, 171, 77);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+  }
+}
