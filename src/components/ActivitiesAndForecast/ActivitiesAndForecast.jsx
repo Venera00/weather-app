@@ -36,6 +36,51 @@ const ActivitiesAndForecast = () => {
           <img src={images.Watch} alt="The watch" />
           <p className={styles.forecast__title}>24-hour forecast</p>
         </div>
+
+        <div className={styles.forecast_details}>
+          <div className={styles.forecast_detail}>
+            <p className={styles.temperature}>26°</p>
+            <img src={images.SunIcon} alt="The temperature image" />
+            <p className={styles.wind_speed}>11.7km/h</p>
+            <p className={styles.time}>22:00</p>
+          </div>
+          <div className={styles.forecast_detail}>
+            <p className={styles.temperature}>26°</p>
+            <img src={images.SunIcon} alt="The temperature image" />
+            <p className={styles.wind_speed}>11.7km/h</p>
+            <p className={styles.time}>22:00</p>
+          </div>
+          <div className={styles.forecast_detail}>
+            <p className={styles.temperature}>26°</p>
+            <img src={images.SunIcon} alt="The temperature image" />
+            <p className={styles.wind_speed}>11.7km/h</p>
+            <p className={styles.time}>22:00</p>
+          </div>
+          <div className={styles.forecast_detail}>
+            <p className={styles.temperature}>26°</p>
+            <img src={images.SunIcon} alt="The temperature image" />
+            <p className={styles.wind_speed}>11.7km/h</p>
+            <p className={styles.time}>22:00</p>
+          </div>
+          <div className={styles.forecast_detail}>
+            <p className={styles.temperature}>26°</p>
+            <img src={images.SunIcon} alt="The temperature image" />
+            <p className={styles.wind_speed}>11.7km/h</p>
+            <p className={styles.time}>22:00</p>
+          </div>
+          <div className={styles.forecast_detail}>
+            <p className={styles.temperature}>26°</p>
+            <img src={images.SunIcon} alt="The temperature image" />
+            <p className={styles.wind_speed}>11.7km/h</p>
+            <p className={styles.time}>22:00</p>
+          </div>
+          <div className={styles.forecast_detail}>
+            <p className={styles.temperature}>26°</p>
+            <img src={images.SunIcon} alt="The temperature image" />
+            <p className={styles.wind_speed}>11.7km/h</p>
+            <p className={styles.time}>22:00</p>
+          </div>
+        </div>
       </div>
     </div>
   );
