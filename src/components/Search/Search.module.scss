@@ -1,0 +1,27 @@
+.search_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 20px;
+}
+
+.input {
+  width: 300px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.input::placeholder {
+  text-transform: none;
+}
+
+.search_icon {
+  cursor: pointer;
+}

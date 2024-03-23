@@ -1,0 +1,28 @@
+.time_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 97px;
+  color: #fff;
+}
+
+.location_container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.location__title {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.weather_type {
+  font-weight: 500;
+  font-size: 48px;
+  margin-bottom: 100px;
+}
+
+.time {
+  font-weight: 400;
+  font-size: 18px;
+}
