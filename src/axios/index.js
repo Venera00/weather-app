@@ -174,7 +174,11 @@ const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
 const getWeatherData = async (infoType, searchParams) => {
   const url = new URL(BASE_URL + "/" + infoType);
-  url.search = new URLSearchParams({ ...searchParams, appid: API_KEY });
+  url.search = new URLSearchParams({
+    ...searchParams,
+    appid: API_KEY,
+    units: "metric",
+  });
 
   console.log(url);
   return fetch(url).then((res) => res.json());
@@ -236,7 +240,7 @@ const formatCurrentWeather = (data) => {
 //   hourly = hourly.slice(1, 7).map((d) => {
 //     return {
 //       title: formatToLocalTime(d.dt, timezone, "hh:mm a"),
-//       temp: d.temp.day,
+//       temp: d.temp,
 //       icon: d.weather[0].icon,
 //     };
 //   });
@@ -264,11 +268,8 @@ const getFormattedData = async (searchParams) => {
 const getIconFromCode = (code) =>
   `http://openweathermap.org/img/wn/${code}@2x.png`;
 
-const formatToLocalTime = (
-  secs,
-  zone,
-  format = "cccc, dd, LLL yyyy' | Local time: 'hh:mm a"
-) => DateTime.fromSeconds(secs).setZone(zone).toFormat(format);
+const formatToLocalTime = (secs, zone, format = "cccc, dd, LLL yyyy") =>
+  DateTime.fromSeconds(secs).setZone(zone).toFormat(format);
 
 export default getFormattedData;
 

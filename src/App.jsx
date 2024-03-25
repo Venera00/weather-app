@@ -22,19 +22,6 @@ function App() {
     getWeatherData();
   }, [query]);
 
-  // useEffect(() => {
-  //   const getWeatherData = async () => {
-  //     try {
-  //       const data = await getFormattedData({ q: "bishkek" });
-  //       console.log(data);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   };
-
-  //   getWeatherData();
-  // }, []);
-
   return (
     <>
       <Search />

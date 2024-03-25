@@ -2,15 +2,18 @@ import React from "react";
 import images from "../../assets/images";
 // import {UilArrowUp, } from
 import styles from "./WeatherDetails.module.scss";
+import { formatToLocalTime } from "../../axios";
 
-const WeatherDetails = () => {
+const WeatherDetails = ({
+  weather: { feels_like, speed, humidity, temp_max, dt },
+}) => {
   return (
     <div className={styles.container}>
       <div className={styles.days}>days</div>
 
       <div className={styles.time}>
         <img src={images.Watch} alt="The watch" />
-        <p className={styles.time__title}>8:00PM GMT</p>
+        <p className={styles.time__title}>{formatToLocalTime(dt)}</p>
       </div>
 
       <p className={styles.conditions__title}>AIR CONDITIONS</p>
@@ -21,7 +24,7 @@ const WeatherDetails = () => {
 
           <div className={styles.conditions__info}>
             <p>Real feel</p>
-            <span className={styles.index}> 30°</span>
+            <span className={styles.index}>{feels_like.toFixed()}°</span>
           </div>
         </div>
 
@@ -29,22 +32,22 @@ const WeatherDetails = () => {
           <img src={images.WindIcon} alt="Wind" />
           <div className={styles.conditions__info}>
             <p>Wind</p>
-            <span className={styles.index}> 0.8 km/hr</span>
+            <span className={styles.index}> {speed} km/hr</span>
           </div>
         </div>
 
         <div className={styles.conditions_wrapper}>
           <img src={images.RainIcon} alt="Rain" />
           <div className={styles.conditions__info}>
-            <p>Chance of rain</p>
-            <span className={styles.index}> 2%</span>
+            <p>Humidity</p>
+            <span className={styles.index}> {humidity}%</span>
           </div>
         </div>
         <div className={styles.conditions_wrapper}>
           <img src={images.SunIcon} alt="Sun" />
           <div className={styles.conditions__info}>
-            <p>UV Index</p>
-            <span className={styles.index}> 4</span>
+            <p>Max temp</p>
+            <span className={styles.index}> {temp_max.toFixed()}°C</span>
           </div>
         </div>
       </div>
