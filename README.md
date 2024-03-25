@@ -45,6 +45,6 @@ yarn dev
 
 ### Executor
 
-Venera Omurzak kyzy
-github: (https://github.com/Venera00)
-telegram: (https://t.me/VeneraOmurzakkyzy)
+Venera Omurzak kyzy /n
+github: https://github.com/Venera00 /n
+telegram: https://t.me/VeneraOmurzakkyzy
