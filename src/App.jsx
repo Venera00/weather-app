@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      <Search />
+      <Search setQuery={setQuery} />
 
       {weather && (
         <div>

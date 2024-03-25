@@ -2,12 +2,19 @@ import React, { useState } from "react";
 import { UilSearch } from "@iconscout/react-unicons";
 import styles from "./Search.module.scss";
 
-const Search = () => {
+const Search = ({ setQuery }) => {
   const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearch = () => {
+    if (searchQuery !== "") {
+      setQuery({ q: searchQuery });
+      setSearchQuery("");
+    }
+  };
 
   const handleEnter = (e) => {
     if (e.key === "Enter") {
-      console.log("CLiked enter");
+      handleSearch();
     }
   };
 
@@ -17,8 +24,10 @@ const Search = () => {
         type="text"
         placeholder="Search for a city..."
         className={styles.input}
+        value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
-        // onKeyDownCapture={handleEnter}
+        onClick={handleSearch}
+        onKeyDownCapture={handleEnter}
       />
       <UilSearch
         size={26}

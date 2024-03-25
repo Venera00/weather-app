@@ -1,6 +1,5 @@
 import React from "react";
 import images from "../../assets/images";
-// import {UilArrowUp, } from
 import styles from "./WeatherDetails.module.scss";
 import { formatToLocalTime } from "../../axios";
 
@@ -9,7 +8,7 @@ const WeatherDetails = ({
 }) => {
   return (
     <div className={styles.container}>
-      <div className={styles.days}>days</div>
+      <div className={styles.days}></div>
 
       <div className={styles.time}>
         <img src={images.Watch} alt="The watch" />
